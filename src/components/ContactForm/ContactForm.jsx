@@ -17,7 +17,7 @@ export default class ContactForm extends Component {
   handleFormSubmit = event => {
     event.preventDefault();
     const { name, phone } = this.state;
-    const { onAdd, onCheckUnique } = this.props;
+    const { onAdd } = this.props;
     const isValidateForm = this.validateForm();
     if (!isValidateForm) return;
     onAdd({ id: nanoid(), name, phone });
