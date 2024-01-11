@@ -1,4 +1,7 @@
-const Filter = ({ filter, onChange }) => {
+import { FC } from 'react';
+import { IFilterProps } from './Filter.types';
+
+const Filter: FC<IFilterProps> = ({ filter, onChange }) => {
   return (
     <input
       type="text"
